@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .roboto {
     font-family: 'Roboto', sans-serif;
 }
@@ -83,4 +87,12 @@ height: 426px;
 .bg-g {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 26, 93, 0.19) 25%, #2171B7 50%, rgba(10, 26, 93, 0.19) 75%, rgba(255, 255, 255, 0) 100%);
 border-radius: 7px;
+}
+
+
+/* contact */
+
+
+.buttun {
+    background: linear-gradient(270deg, #0A1A5D 0%, #2171B7 100%);
 }
