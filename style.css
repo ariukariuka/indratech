@@ -7,6 +7,52 @@
     box-sizing: border-box;
 }
 
+.count-p {
+    font-size: 38px;
+    font-family: 'Commissioner', sans-serif;
+    color: #0A1A5D;
+    font-weight: 700;
+    text-align: center;
+}
+.count-c {
+    font-size: 23px;
+    font-family: 'Commissioner', sans-serif;
+    color: #0A1A5D;
+    font-weight: 400;
+    text-align: center;
+}
+.ani {
+    animation: textscale 1s infinite ease-in-out;
+}
+@keyframes textscale {
+    0% {
+      transform: scale(1.5);
+      letter-spacing: 0px;
+
+    }
+    27% {
+      transform: scale(1.4);
+      letter-spacing: 3px;
+    
+    }
+    71% {
+      transform: scale(1.5);
+      letter-spacing: 0px;
+    }
+  
+    100% {
+      transform: scale(1.6);
+      letter-spacing: 0px;
+    }
+  }  
+.list1 li{
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0A1A5D;
+    margin-top: 10px;
+}
+
 .menu-o {
     opacity: 0;
     z-index: -1;
@@ -47,6 +93,7 @@
 .modal {
     opacity: 0;
     z-index: -1;
+    transform: translateY(200px);
     transition: all 0.5s ease-in-out;
 }
 .overlay {
@@ -68,6 +115,7 @@
     transition: all 0.5s ease-in;
     z-index: 1004;
     opacity: 1;
+    transform: translateY(0px);
 }
 
 

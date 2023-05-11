@@ -34,22 +34,716 @@
     <div id="overlay" class="overlay">
         
     </div>
-    <div id="modal" class="fixed modal px-[1rem] sm:px-[0rem]  w-full h-[100vh] flex justify-center items-center">
-        <div class="bg-[#fff] shadow-2xl overflow-hidden relative  rounded-[50px] w-full overflow-scroll  sm:w-[1000px] ">
+    <div id="modal" class="fixed modal px-[0.5rem] sm:px-[0rem]  w-full h-[100vh] flex justify-center items-center">
+        <div class="bg-[#fff] shadow-2xl overflow-hidden relative  rounded-[50px] w-full  sm:w-[1000px] ">
             <div class="w-full">
-                <div>
-                    <div class="absolute w-full flex justify-end right-[30px] mt-[30px]">
+                <div class="pt-[3rem] px-[1rem] sm:px-[3rem]">
+                    <div class="absolute w-full flex justify-end right-[20px] sm:right-[40px] mt-[10px]">
                         <div id="close" class="w-[30px] sm:w-[50px] cursor-pointer h-[30px] sm:h-[50px]">
                             <img src="./img/close.png" class="w-full h-full" alt="">
                         </div>
                     </div>
-                    <img src="./img/modal1.jpeg" alt="">
-                </div>
-                <div class="max-h-[500px] overflow-scroll">
-                    <div class="h-[900px]">
-                        <h1 class="h-full flex items-end">dfdasfdas</h1>
+                    <div class="">
+                        <div class="w-[150px] sm:w-[250px]">
+                            <img src="./img/logo-i.png" alt="" class="w-full h-full">
+                        </div>
+                     
                     </div>
-                   
+                    
+                </div>
+                <div class="mt-[3rem]">
+                    <div>
+                        <img src="./img/Line3.svg" alt="">
+                    </div>
+                </div>
+                <div class="max-h-[700px] pb-[7rem]  overflow-y-auto overflow-x-hidden">
+                    <div class="bg-[#fff] py-[3rem] ml-[5px] flex justify-center w-full sm:justify-start sm:ml-[3rem] mt-[2rem]">
+                            <div class="block sm:flex  items-center gap-[30px]">
+                                <div class="flex gap-[20px] items-center">
+                                    <div class="w-[50px] h-[50px]">
+                                        <img src="./img/16.png" class="w-full h-full" alt="">
+                                    </div>
+                                    <p class="text-[16px] sm:text-[24px] font1 uppercase font-[600] text-[#0A1A5D]">Бүртгэл дуусахад -</p>
+                                </div>
+                               
+                                <div class="block sm:flex gap-[40px] items-center">
+                              
+                                    <div class="mt-[2rem] sm:mt-[0rem]">
+                                        <div class="flex gap-[20px]">
+                                            <div class="countdown">
+                                                <p class="count-c">Өдөр</p>
+                                                <p class="count-p" id = 'days'>0</p>
+                                               
+                                            </div>
+                                            <div class="countdown">
+                                                <p class="count-c">Цаг</p>
+                                                <p class="count-p" id = 'hours'>0</p>
+                                                
+                                            </div>
+                                            <div class="countdown">
+                                                <p class="count-c">Минут</p>
+                                                <p class="count-p" id = 'minuts'>0</p>
+                                               
+                                            </div>
+                                            <div class="countdown">
+                                                <p class="count-c">Секунд</p>
+                                                <p class="count-p" id = 'seconds'>0</p>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="top-[-1%]  sticky h-full ">
+                        <div class="w-full flex justify-end ">
+                            <img src="./img/Line2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="px-[1rem] sm:px-[3rem]">
+                        <div class="mt-[5rem]">
+                        
+                            <div>
+                                <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">Оюутан залуусын дунд хамгийн их хүлээлттэй мөн хамгийн эрэлттэй 🎓 Мэргэжлийн программист бэлтгэх 1 жилийн ангидаа элсэлт авч эхэллээ 🥳</p>
+                            </div>
+                            
+                            <div class="my-[2rem]">
+                                <ul>
+                                    <li>
+                                        <div class="flex gap-[20px]">
+                                            <div>
+                                                <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                            </div>
+                                            <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Та манай сургуульд суралцсанаар анхан шатнаас нь эхлүүлэн мэргэжлийн төвшин хүртэлх мэдлэгийг богино хугацаанд 100% практикаар сурч төгсөөд шууд ажлын байраар хангагдана</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/10.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">1 жилийн ангийн онцлог, давуу тал:</p>
+                            </div>
+                            <div class="mt-[1rem]">
+                                <div class="ml-[30px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Заах аргазүйн туршлагатай мэргэжлийн Энэтхэг, Монгол багш нар хичээл орох болно</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">уралцаж байх хугацаандаа мэргэжлийн сениор программистуудаар ахлуулан бодит төслүүд дээр цалинтай дадлага хийх боломжтой.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Шинэчилсэн хөтөлбөртэй, олон улсад хүлээн зөвшөөрөгдсөн дипломтой</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Төгсөөд манай группийн охин компаниуд болох Тататонга ХХК, Амжилт Дот Ком ХХК, Том-Амжилт ХХК-уудад шууд ажлын байраар хангагдана.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/teaching-aids.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Хичээлийн хөтөлбөр:</p>
+                            </div>
+                            <div>
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul class="list-disc list1 mt-[3rem]">
+                                        <li>HTML, CSS, Tailwind, .less, .sass,+ PHP,</li>
+                                        <li>JAVASCRIPT, NODE JS, REACT JS, REACT NATIVE, NEXT JS</li>
+                                        <li>PYTHON</li>
+                                        <li>Flutter</li>
+                                        <li>MySQL</li>
+                                        <li>MONGO DB</li>
+                                        <li>UX / UI</li>
+                                        <li>Англи хэл</li>
+                                        <li>IT business management-н хичээл</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/11.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Нэмэлт хөтөлбөр:</p>
+                            </div>
+                            <div>
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul class="list-disc list1 mt-[3rem]">
+                                        <li>😎 Start Up хөтөлбөр</li>
+                                        <li>😎 Hackathon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/12.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Эзэмших ур чадвар:</p>
+                            </div>
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">💯Бүх төрлийн гар утасны апп, вэб сайт, вэб систем хийдэг багаар ажиллах чадвартай, англи хэлний мэдлэгтэй Fullstack мэргэжлийн программист болж төгсөнө.</p>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/13.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Олгогдох бичиг баримт:</p>
+                            </div>
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">ХНХЯ-ны чадамжийн гэрчилгээ</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Олон улсад хүлээн зөвшөөрөгдсөн мэргэжлийн диплом👏👏👏</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="mt-[3rem]">
+                            
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/14.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Элсэлтийн мэдээлэл:</p>
+                            </div>
+                            <div class="ml-[40px] sm:ml-[100px] mb-[1rem] sm:mb-[0rem] mt-[2rem]">
+                                <p class="font1 text-[16px] text-[#0A1A5D] font-[400]">Нийт <span class="ani font-g text-[50px] font-[600]"> 150 </span> оюутан бүртгэх бөгөөд үүнээс</p>
+                            </div>
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">🧑‍🎓“Indra Campus” дотуур байртай ангид- 50 оюутан</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">👩‍🎓Танхимын ангид-100 оюутан</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="mt-[3rem]">
+                            
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/15.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Тавигдах шаардлага:</p>
+                            </div>
+                           
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">☝️ Программ хангамжаар сурч хөгжин ажиллах чин хүсэлтэй байх.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">☝️ Манай сургуулийн шалгалтыг өгсөн байх</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">☝️ Хувьдаа Notebook-тэй байх</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="mt-[3rem]">
+                            
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/17.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Хичээл эхлэх болон дуусах өдөр:</p>
+                            </div>
+                           
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Хичээл эхлэх өдөр: 2023/09/01 Даваа-Баасан гараг</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Хичээл дуусах хугацаа: 2024/06/01</p>
+                                            </div>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-b" class="fixed modal px-[0.5rem] sm:px-[0rem]  w-full h-[100vh] flex justify-center items-center">
+        <div class="bg-[#fff] shadow-2xl overflow-hidden relative  rounded-[50px] w-full  sm:w-[1000px] ">
+            <div class="w-full">
+                <div class="pt-[3rem] px-[1rem] relative sm:px-[3rem]">
+                    <div class="absolute w-full flex justify-end right-[20px] sm:right-[40px] mt-[10px]">
+                        <div id="close-b" class="w-[30px] sm:w-[50px] cursor-pointer h-[30px] sm:h-[50px]">
+                            <img src="./img/close.png" class="w-full h-full" alt="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="w-[150px] sm:w-[250px]">
+                            <img src="./img/logo1.png" alt="" class="w-full h-full">
+                        </div>
+                     
+                    </div>
+                    
+                </div>
+                <div class="mt-[3rem]">
+                    <div>
+                        <img src="./img/Line3.svg" alt="">
+                    </div>
+                </div>
+                <div class="max-h-[700px] pb-[7rem]  overflow-y-auto overflow-x-hidden">
+                    <div class="bg-[#fff] py-[3rem] ml-[5px] flex justify-center w-full sm:justify-start sm:ml-[3rem] mt-[2rem]">
+                            <div class="block sm:flex  items-center gap-[30px]">
+                                <div class="flex gap-[20px] items-center">
+                                    <div class="w-[50px] h-[50px]">
+                                        <img src="./img/16.png" class="w-full h-full" alt="">
+                                    </div>
+                                    <p class="text-[16px] sm:text-[24px] font1 uppercase font-[600] text-[#0A1A5D]">Бүртгэл дуусахад -</p>
+                                </div>
+                               
+                                <div class="block sm:flex gap-[40px] items-center">
+                              
+                                    <div class="mt-[2rem] sm:mt-[0rem]">
+                                        <div class="flex gap-[20px]">
+                                            <div class="countdown">
+                                                <p class="count-c">Өдөр</p>
+                                                <p class="count-p" id = 'days-b'>0</p>
+                                               
+                                            </div>
+                                            <div class="countdown">
+                                                <p class="count-c">Цаг</p>
+                                                <p class="count-p" id = 'hours-b'>0</p>
+                                                
+                                            </div>
+                                            <div class="countdown">
+                                                <p class="count-c">Минут</p>
+                                                <p class="count-p" id = 'minuts-b'>0</p>
+                                               
+                                            </div>
+                                            <div class="countdown">
+                                                <p class="count-c">Секунд</p>
+                                                <p class="count-p" id = 'seconds-b'>0</p>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="top-[-1%]  sticky h-full ">
+                        <div class="w-full flex justify-end ">
+                            <img src="./img/Line2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="px-[1rem] sm:px-[3rem]">
+                        <div class="mt-[5rem]">
+                        
+                            <div>
+                                <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">Оюутан залуусын дунд хамгийн их хүлээлттэй мөн хамгийн эрэлттэй 🎓 Мэргэжлийн программист бэлтгэх 1 жилийн ангидаа элсэлт авч эхэллээ 🥳</p>
+                            </div>
+                            
+                            <div class="my-[2rem]">
+                                <ul>
+                                    <li>
+                                        <div class="flex gap-[20px]">
+                                            <div>
+                                                <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                            </div>
+                                            <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Та манай сургуульд суралцсанаар анхан шатнаас нь эхлүүлэн мэргэжлийн төвшин хүртэлх мэдлэгийг богино хугацаанд 100% практикаар сурч төгсөөд шууд ажлын байраар хангагдана</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/10.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">1 жилийн ангийн онцлог, давуу тал:</p>
+                            </div>
+                            <div class="mt-[1rem]">
+                                <div class="ml-[30px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Заах аргазүйн туршлагатай мэргэжлийн Энэтхэг, Монгол багш нар хичээл орох болно</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">уралцаж байх хугацаандаа мэргэжлийн сениор программистуудаар ахлуулан бодит төслүүд дээр цалинтай дадлага хийх боломжтой.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Шинэчилсэн хөтөлбөртэй, олон улсад хүлээн зөвшөөрөгдсөн дипломтой</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Төгсөөд манай группийн охин компаниуд болох Тататонга ХХК, Амжилт Дот Ком ХХК, Том-Амжилт ХХК-уудад шууд ажлын байраар хангагдана.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/teaching-aids.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Хичээлийн хөтөлбөр:</p>
+                            </div>
+                            <div>
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul class="list-disc list1 mt-[3rem]">
+                                        <li>HTML, CSS, Tailwind, .less, .sass,+ PHP,</li>
+                                        <li>JAVASCRIPT, NODE JS, REACT JS, REACT NATIVE, NEXT JS</li>
+                                        <li>PYTHON</li>
+                                        <li>Flutter</li>
+                                        <li>MySQL</li>
+                                        <li>MONGO DB</li>
+                                        <li>UX / UI</li>
+                                        <li>Англи хэл</li>
+                                        <li>IT business management-н хичээл</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/11.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Нэмэлт хөтөлбөр:</p>
+                            </div>
+                            <div>
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul class="list-disc list1 mt-[3rem]">
+                                        <li>😎 Start Up хөтөлбөр</li>
+                                        <li>😎 Hackathon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/12.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Эзэмших ур чадвар:</p>
+                            </div>
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">💯Бүх төрлийн гар утасны апп, вэб сайт, вэб систем хийдэг багаар ажиллах чадвартай, англи хэлний мэдлэгтэй Fullstack мэргэжлийн программист болж төгсөнө.</p>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[3rem]">
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/13.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Олгогдох бичиг баримт:</p>
+                            </div>
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">ХНХЯ-ны чадамжийн гэрчилгээ</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Олон улсад хүлээн зөвшөөрөгдсөн мэргэжлийн диплом👏👏👏</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="mt-[3rem]">
+                            
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/14.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Элсэлтийн мэдээлэл:</p>
+                            </div>
+                            <div class="ml-[40px] sm:ml-[100px] mb-[1rem] sm:mb-[0rem] mt-[2rem]">
+                                <p class="font1 text-[16px] text-[#0A1A5D] font-[400]">Нийт <span class="ani font-g text-[50px] font-[600]"> 150 </span> оюутан бүртгэх бөгөөд үүнээс</p>
+                            </div>
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">🧑‍🎓“Indra Campus” дотуур байртай ангид- 50 оюутан</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">👩‍🎓Танхимын ангид-100 оюутан</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="mt-[3rem]">
+                            
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/15.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Тавигдах шаардлага:</p>
+                            </div>
+                           
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">☝️ Программ хангамжаар сурч хөгжин ажиллах чин хүсэлтэй байх.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">☝️ Манай сургуулийн шалгалтыг өгсөн байх</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">☝️ Хувьдаа Notebook-тэй байх</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="mt-[3rem]">
+                            
+                            <div class="flex items-center gap-[30px] sm:gap-[40px]">
+                                <div>
+                                    <div class="w-[40px] h-[40px]">
+                                        <img src="./img/17.png" class="w-full h-full" alt="">
+                                    </div>
+                                </div>
+                                <p class="text-[20px] font-g font1 text-[#0A1A5D] font-[600] uppercase">Хичээл эхлэх болон дуусах өдөр:</p>
+                            </div>
+                           
+                            <div class="mt-[1rem]">
+                                <div class="ml-[40px] sm:ml-[100px]">
+                                    <ul>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Хичээл эхлэх өдөр: 2023/09/01 Даваа-Баасан гараг</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex gap-[20px] items-center">
+                                                <div>
+                                                    <p class="font1 text-[24px] font-[400] text-[#0A1A5D]">-</p>
+                                                </div>
+                                                <p class="font1 text-[16px] font-[300] text-[#0A1A5D]">Хичээл дуусах хугацаа: 2024/06/01</p>
+                                            </div>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -94,14 +788,31 @@
                 <div class="w-[500px] mt-[4rem] md:mt-[0px] md:w-[800px] lg:w-[1200px] opacity-[0.3] md:h-[700px] lg:h-[950px] absolute z-[2]">
                     <img src="./img/banner4.png" class="banner w-full h-full object-cover" alt="">
                 </div>
-                <div class="h-[550px] w-full md:w-[700px] lg:w-[900px] md:h-[800px] lg:h-[950px] z-[3] absolute">
-                    <div class="w-full h-full flex justify-center items-center">
-                        <div class="w-[130px] h-[50px] md:w-[260px] md:h-[90px] lg:w-[400px] lg:h-[150px]">
-                            <img src="./img/logo1.png" alt="" class="w-full h-full">
+                <div class="relative z-[3]">
+                    <div>
+                        <div class="h-[550px] w-full md:w-[700px] lg:w-[900px] md:h-[800px] lg:h-[950px] z-[3] absolute">
+                            <div class="w-full h-full flex justify-center items-center">
+                                <div class="slider2 w-[200px] sm:w-[400px]">
+                                    <div class="">
+                                        <div class="w-[200px] h-[72px]  md:w-[260px] md:h-[90px] lg:w-[400px] sm:mt-[5px] lg:h-[135px]">
+                                            <img src="./img/logo1.png" alt="" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="w-[200px] h-[70px]  md:w-[260px] md:h-[90px] lg:w-[400px] lg:h-[135px]">
+
+                                            <img src="./img/logo-i.png" alt="" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                               
+                            </div>
                         </div>
-                       
                     </div>
+                    
                 </div>
+                
                 <div class="w-full md:h-[600px] lg:h-[800px] mt-[120px] hidden min-[650px]:flex justify-end items-center absolute z-[5]">
                     <div class="md:w-[500xp] md:h-[500px] lg:w-[750px] lg:h-[750px] box1 relative md:right-[-180px]  lg:right-[-200px] rounded-[50%] bg-[#FAFAFA]">
                         <div class="w-full h-full md:right-[130px] lg:right-[200px]  relative">
@@ -174,15 +885,15 @@
                 <div class="md:flex lg:flex gap-[100px] mt-[100px] md:mt-[50px] mr-[40px] sm:mr-[0px] lg:mt-[0px]">
                     <div class="card relative overflow-hidden md:mt-[0px] lg:mt-[-110px] px-[1.5rem]">
                         <div class="w-full flex justify-center mt-[2rem]">
-                            <div class="w-[200px] h-[70px]">
-                                <img src="./img/logo1.png" class="w-full h-full" alt="">
+                            <div class="w-[200px] h-[75px]">
+                                <img src="./img/logo-i.png" class="w-full h-full" alt="">
                             </div>
                         </div>
                         <div class="pt-[2rem]">
-                            <p class="font-a font1 font-[600] text-[24px]">KEY CODE</p>
+                            <p class="font-a font1 font-[700] text-[24px]">1 жилийн</p>
                         </div>
                         <div class="pt-[10px]">
-                            <p class="font1 text-[16px] text-[#0A1A5D] font-[500]">Үндсэн ангийн хөтөлбөр</p>
+                            <p class="font1 text-[16px] text-[#0A1A5D] uppercase font-[500]">Програмистын анги</p>
                         </div>
                         <div class="pt-[1.5rem]">
                             <div class="flex items-center gap-[40px]">
@@ -237,10 +948,10 @@
                             </div>
                         </div>
                         <div class="pt-[2rem]">
-                            <p class="font-a font1 font-[600] text-[24px]">KEY CODE</p>
+                            <p class="font-a font1 font-[700] text-[24px]">1 жилийн</p>
                         </div>
                         <div class="pt-[10px]">
-                            <p class="font1 text-[16px] text-[#0A1A5D] font-[500]">Үндсэн ангийн хөтөлбөр</p>
+                            <p class="font1 text-[16px] text-[#0A1A5D] uppercase font-[500]">Програмистын анги</p>
                         </div>
                         <div class="pt-[1.5rem]">
                             <div class="flex items-center gap-[40px]">
@@ -268,22 +979,25 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="absolute z-[1] w-full flex justify-end ml-[100px] mt-[-30px]">
-                            <div class="w-[250px] absolute  h-[300px] more rounded-[120px]">
+                        <div id="button-b">
+                            <div class="absolute z-[1] w-full flex justify-end ml-[100px] mt-[-30px]">
+                                <div class="w-[250px] btn2 absolute  h-[300px] more rounded-[120px]">
+                                    
+                                </div>
                                 
                             </div>
-                            
-                        </div>
-                        <div class="absolute z-[2] w-full flex justify-end ml-[70px] mt-[-10px]">
-                            <div class="w-[200px] absolute  h-[250px] bg-[#0A1A5D] rounded-[100px]">
-                                <div class="relative top-[32px] left-[40px]">
-                                    <div class="w-[45px] h-[45px]">
-                                        <img src="./img/play.png" class="w-full h-full" alt="">
+                            <div class="absolute  z-[2] w-full flex justify-end ml-[70px] mt-[-10px]">
+                                <div class="w-[200px] btn absolute  h-[250px] bg-[#0A1A5D] rounded-[100px]">
+                                    <div class="relative top-[32px] left-[40px]">
+                                        <div class="btn-img w-[45px] h-[45px]">
+                                            <img src="./img/play.png" class="w-full h-full" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                            </div>  
-                            
+                                </div>  
+                                
+                            </div>
                         </div>
+                        
                     </div>
                     <div class="hidden lg:flex mt-[120px] ml-[-5px]">
                         <div>
@@ -521,12 +1235,15 @@
             <div>
                 <div class="w-full flex justify-center px-[1rem] sm:px-[0rem] mt-[4rem]">
                     <div class="w-full sm:w-[450px] relative">
-                        <div class="absolute ml-[250px] sm:ml-[335px]">
-                            <button class="w-[115px] h-[44px] buttun rounded-[25px] px-[2.8rem] py-[10px]">
-                                <img src="./img/send-message .png" class="w-full h-full" alt="">
-                            </button>
-                        </div>
-                        <input type="text" placeholder="example@gmail.com" class="bg-[#f5f5f5] px-[20px] w-full rounded-[40px] py-[10px]">
+                        <form action="#">
+                            <div class="absolute ml-[265px] sm:ml-[335px]">
+                                <button class="w-[115px] h-[44px] buttun rounded-[25px] px-[2.8rem] py-[10px]">
+                                    <img src="./img/send-message .png" class="w-full h-full" alt="">
+                                </button>
+                            </div>
+                            <input type="number" required placeholder="Утасны дугаараа оруулна уу!" class="bg-[#f5f5f5] outline-none px-[20px] w-full rounded-[40px] py-[10px]">
+                        </form>
+                      
                         
                     </div>
           
@@ -560,7 +1277,7 @@
                                 <div>
                                     <div class="flex justify-center items-center gap-[15px] sm:gap-[40px]">
                                         <div>
-                                            <p class="font-[300] font1 text-[#0A1A5D] text-[16px] sm:text-[20px]">8686-3737</p>
+                                            <p class="font-[300] font1 text-[#0A1A5D] text-[16px] sm:text-[20px]">88526060</p>
                                         </div>
                                         <div>
                                             <div>
@@ -568,7 +1285,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <p class="font-[300] font1 text-[#0A1A5D] text-[16px] sm:text-[20px]">8686-3737</p>
+                                            <p class="font-[300] font1 text-[#0A1A5D] text-[16px] sm:text-[20px]">80336060</p>
                                         </div>
                                     </div>
                                     <div class="flex justify-center items-center gap-[15px] sm:gap-[40px]">
@@ -581,12 +1298,13 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <p class="font-[300] font1 text-[#0A1A5D] text-[16px] sm:text-[20px]">info@indra.institute</p>
+                                            <p class="font-[300] font1 text-[#0A1A5D] text-[16px] sm:text-[20px]">info@indra.institute
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="flex justify-center items-center gap-[15px] sm:gap-[40px]">
                                         <div>
-                                            <a href="" class="underline">
+                                            <a href="https://www.facebook.com/indrabootcamp" target="_blank" class="underline">
                                                 <p class="font-[300] font1 text-[#0A1A5D] text-[16px] sm:text-[20px]">Indra Campus</p>
                                             </a>
                                         </div>
@@ -596,9 +1314,9 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <a href="" class="underline">
+                                            <a href="https://www.facebook.com/indratech.institute" target="_blank" class="underline">
 
-                                                <p class="font-[300] font1 text-[#0A1A5D] text-[16px] sm:text-[20px]">Indra Campus</p>
+                                                <p class="font-[300] font1 text-[#0A1A5D] text-[16px] sm:text-[20px]">Indra institute</p>
                                             </a>
                                         </div>
                                     </div>
@@ -637,6 +1355,16 @@
         $('.slider').slick(
             {
                 dots: true
+            }
+        );
+        $('.slider2').slick(
+            {
+                infinite: true,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 2000,
+
             }
         );
     </script>
